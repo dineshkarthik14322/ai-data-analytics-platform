@@ -35,7 +35,7 @@ The screenshots below show the platform analysing `Churn_Modelling.csv` — 10,0
 
 ![Business risks and recommendations roadmap](risks-roadmap.png)
 
-- **Primary risk:** customers in Germany show elevated churn compared with other regions — the platform recommends a localised retention outreach and engagement campaign, with an expected 12% reduction in Germany's churn rate (high priority, 0–3 months)
+- **Primary risk:** customers in Germany show elevated churn compared with other regions — the platform recommends a localised retention outreach and engagement campaign, and estimates a 12% reduction in Germany's churn rate (high priority, 0–3 months)
 - **Secondary risk:** active membership status has a strong inverse relationship with churn — engagement rewards and active-portal benefits are recommended to grow the share of active members (medium priority, 3–6 months)
 
 ![One-click executive presentation](presentation-deck.png)
@@ -48,10 +48,9 @@ The screenshots below show the platform analysing `Churn_Modelling.csv` — 10,0
 | --- | --- |
 | App & UI | Streamlit, Plotly |
 | Data | Pandas, NumPy, openpyxl |
-| Modelling | scikit-learn |
+| Modelling | scikit-learn — linear regression for trend forecasts |
 | AI explanations | Google Gemini (`google-generativeai`) |
 | Presentation export | python-pptx |
-| Testing | pytest |
 
 ## How to run it
 
@@ -71,11 +70,7 @@ To generate the built-in test datasets (sales, HR, e-commerce, and banking — e
 python generate_test_data.py
 ```
 
-To run the test suite:
-
-```bash
-pytest
-```
+The demo dataset shown in the screenshots (`Churn_Modelling.csv`, 10,000 banking-customer records) is not included in this repo — upload your own CSV or Excel file, or use the generated sample datasets above.
 
 ## Files
 
